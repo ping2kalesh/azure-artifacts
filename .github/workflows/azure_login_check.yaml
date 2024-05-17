@@ -20,3 +20,4 @@ jobs:
         azcliversion: latest
         inlineScript: |
           az account show
+          az vm list -o table
