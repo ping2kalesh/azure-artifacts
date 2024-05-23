@@ -21,3 +21,5 @@ jobs:
         inlineScript: |
           az account show
           az vm list -o table
+          az group create dvtest3 --location eastus
+          az vm create --name test-vm4 -g dvtest3
