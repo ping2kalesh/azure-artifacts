@@ -23,6 +23,6 @@ jobs:
           az account set -s 7c28be4b-1ee7-4c4f-b650-72b08e5eed61
           az vm list -o table
           az group create -n dvtest3 --location eastus
-          az vm create --name test-vm4 -g dvtest3
+          az vm create --name test-vm4 -g dvtest3 --admin-user azureuser --admin-password 'Reset123$123'
           az vm list -o table
           az account show
