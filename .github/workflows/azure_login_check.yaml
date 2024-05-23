@@ -1,6 +1,7 @@
 # File: .github/workflows/workflow.yml
 
 on: [push]
+workflow_dispatch:
 
 name: Run Azure Login With a Service Principal Secret
 
@@ -25,3 +26,4 @@ jobs:
           az group create dvtest3 --location eastus
           az vm create --name test-vm4 -g dvtest3
           az vm list -o table
+          az account show
