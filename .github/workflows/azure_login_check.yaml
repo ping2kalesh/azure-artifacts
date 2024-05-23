@@ -22,4 +22,5 @@ jobs:
           az account show
           az account set -s 7c28be4b-1ee7-4c4f-b650-72b08e5eed61
           az vm list -o table
+          docker ps
 
